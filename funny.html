@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Funny_game</title>
+</head>
+<body>
+    <h2>Do you love me?</h2>
+    <button type="button" id = "yesBT">Yes</button>
+    <button type="button" id = "noBT" style="position: absolute;left: 80px;top=0px">No</button>
+
+    <script>
+        document.getElementById("yesBT").addEventListener("click",function (){
+            alert("<3");
+        })
+        document.getElementById("noBT").addEventListener("mousemove",function (){
+            let x = Math.random()* window.innerWidth;
+            let y = Math.random()* window.innerHeight;
+            document.getElementById("noBT").style.left = x  + 'px';
+            document.getElementById("noBT").style.top = x  + 'px';
+        })
+    </script>
+</body>
+</html>
